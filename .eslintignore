@@ -1,0 +1,8 @@
+/build
+/config
+/public
+/scripts
+/node_modules
+
+index.js
+index.map.js
