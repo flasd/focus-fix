@@ -1,4 +1,4 @@
-import { userTabbing } from "./styles.scss";
+import { userTabbing } from "./styles.module.scss";
 
 function handleMouseDownOnce() {
   document.body.classList.remove(userTabbing);
