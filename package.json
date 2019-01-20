@@ -1,6 +1,6 @@
 {
   "name": "@flasd/focus-fix",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "devDependencies": {
     "@babel/core": "7.1.6",
     "@commitlint/cli": "^7.3.2",
