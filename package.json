@@ -1,10 +1,6 @@
 {
-  "name": "component-base",
-  "version": "0.1.0",
-  "private": true,
-  "peerDependencies": {
-    "react": "^16.7.0"
-  },
+  "name": "@flasd/focus-fix",
+  "version": "1.0.0",
   "devDependencies": {
     "@babel/core": "7.1.6",
     "@commitlint/cli": "^7.3.2",
@@ -23,7 +19,7 @@
     "css-loader": "1.0.0",
     "dotenv": "6.0.0",
     "dotenv-expand": "4.2.0",
-    "eslint": "^5.12.0",
+    "eslint": "^5.6.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-react-app": "^3.0.6",
     "eslint-loader": "2.1.1",
