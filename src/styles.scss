@@ -1,0 +1,16 @@
+.userTabbing {}
+
+body:not(.userTabbing) button:focus,
+body:not(.userTabbing) input:focus,
+body:not(.userTabbing) select:focus,
+body:not(.userTabbing) div:focus,
+body:not(.userTabbing) li:focus,
+body:not(.userTabbing) textarea:focus {
+  outline: none !important;
+}
+
+body.userTabbing *:focus {
+  outline: 2px solid #7aacfe !important;
+  /* for non-webkit browsers */
+  outline: 5px auto -webkit-focus-ring-color !important;
+}

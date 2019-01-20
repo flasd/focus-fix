@@ -1,13 +1,21 @@
-import React from 'react';
-// eslint-disable-next-line import/no-extraneous-dependencies
-import ReactDOM from 'react-dom';
+import { userTabbing } from './styles.scss';
 
-if (process.env.NODE_ENV === 'development') {
-  ReactDOM.render(
-    React.createElement(null),
-    // eslint-disable-next-line no-undef
-    document.getElementById('root'),
-  );
+export default function fixFocus() {
+  function handleMouseDownOnce() {
+    document.body.classList.remove(userTabbing);
+
+    window.removeEventListener('mousedown', handleMouseDownOnce);
+    // eslint-disable-next-line no-use-before-define
+    window.addEventListener('keydown', handleFirstTab);
+  }
+
+  function handleFirstTab(e) {
+    if (e.keyCode === 9) {
+      document.body.classList.add(userTabbing);
+      window.removeEventListener('keydown', handleFirstTab);
+      window.addEventListener('mousedown', handleMouseDownOnce);
+    }
+  }
+
+  window.addEventListener('keydown', handleFirstTab);
 }
-
-export default { /* module surface */ };
