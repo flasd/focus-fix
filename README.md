@@ -1,15 +1,20 @@
-# component-base
+# focus-fix
 
-Build system to create standalone React components.
+Hide that ugly browser outline when users are using only the mouse.
 
 ### Setup
 
 Simply do:
 
 ```shell
-npm install
+npm install @flasd/focus-fix
 ```
 
 ### Usage
 
-The file `src/index.js` is your module's surface. The build system supports css and scss imports.
+```javascript
+import '@flasd/focus-fix';
+import '@flasd/focus-fix/styles.css';
+```
+
+Done!
